@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>origin404 blog | origin404 blog</title><meta name="author" content="originQ404"><meta name="copyright" content="originQ404"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="1.LATEX的基本使用 源代码1.1 是一份最短的LATEX 源代码示例。   1234\documentclass&#123;article&#125;\begin&#123;document&#125;&#96;&#96;Hello world!&#x27;&#x27; from \LaTeX.\end&#123;document&#125; 这里首先介绍如何编译使用这份源代码，在后续小节中再介绍源代码的细">
+<meta property="og:type" content="article">
+<meta property="og:title" content="origin404 blog">
+<meta property="og:url" content="https://origin404.github.io/hexo/2025/06/22/latex/index.html">
+<meta property="og:site_name" content="origin404 blog">
+<meta property="og:description" content="1.LATEX的基本使用 源代码1.1 是一份最短的LATEX 源代码示例。   1234\documentclass&#123;article&#125;\begin&#123;document&#125;&#96;&#96;Hello world!&#x27;&#x27; from \LaTeX.\end&#123;document&#125; 这里首先介绍如何编译使用这份源代码，在后续小节中再介绍源代码的细">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&pid=ImgDetMain">
+<meta property="article:published_time" content="2025-06-22T11:43:27.740Z">
+<meta property="article:modified_time" content="2025-06-22T13:44:30.212Z">
+<meta property="article:author" content="originQ404">
+<meta property="article:tag" content="???">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&pid=ImgDetMain"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "https://origin404.github.io/hexo/2025/06/22/latex/",
+  "image": "https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&pid=ImgDetMain",
+  "datePublished": "2025-06-22T11:43:27.740Z",
+  "dateModified": "2025-06-22T13:44:30.212Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "originQ404",
+      "url": "https://github.com/origin404"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/hexo/img/favicon.png"><link rel="canonical" href="https://origin404.github.io/hexo/2025/06/22/latex/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/hexo/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/hexo/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'origin404 blog',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://t.alcy.cc/ycy);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&amp;pid=ImgDetMain" onerror="this.onerror=null;this.src='/hexo/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/hexo/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/hexo/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/hexo/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hexo/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/hexo/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/hexo/movies/"><i class="fa-fw fas fa-video"></i><span> Movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/hexo/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://t.alcy.cc/ycy);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/hexo/"><img class="site-icon" src="https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&amp;pid=ImgDetMain" alt="Logo"><span class="site-name">origin404 blog</span></a><a class="nav-page-title" href="/hexo/"><span class="site-name">origin404 blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hexo/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/hexo/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/hexo/movies/"><i class="fa-fw fas fa-video"></i><span> Movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/hexo/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/hexo/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-22T11:43:27.740Z" title="发表于 2025-06-22 19:43:27">2025-06-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-22T13:44:30.212Z" title="更新于 2025-06-22 21:44:30">2025-06-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="1-LATEX的基本使用"><a href="#1-LATEX的基本使用" class="headerlink" title="1.LATEX的基本使用"></a>1.LATEX的基本使用</h2><blockquote>
+<p>源代码1.1 是一份最短的LATEX 源代码示例。  </p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;article&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line">``Hello world!&#x27;&#x27; from <span class="keyword">\LaTeX</span>.</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+<p>这里首先介绍如何编译使用这份源代码，在后续小节中再介绍源代码的细节。你可以将这份源代码保存为helloworld.tex，而后编译。具体来说:<br>• 如果使用TeXworks 或 TeXstudio 等编辑器，你可以使用编辑器提供的“编译”按钮或者“排版”按钮。建议使用pdfLATEX或XeLATEX 作为默认的编译方式（不同编译方式的差别，见1.7 节）。<br>• 如果使用命令行方式进行编译，则需打开Windows命令提示符或者*nix的终端，在源代码所在的目录下输入：  </p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pdflatex helloworld</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xelatex helloworld</span><br></pre></td></tr></table></figure>
+<p>如果编译成功，可以在helloworld.tex 所在目录看到生成的helloworld.pdf以及一些其它文件。<br>中文的LATEX。编译的方式与上一份源代码相同，但需使用XeLATEX 编译方式3。</p>
+</blockquote>
+<h2 id="2-文档的代码结构与基本的组织方式"><a href="#2-文档的代码结构与基本的组织方式" class="headerlink" title="2.文档的代码结构与基本的组织方式"></a>2.文档的代码结构与基本的组织方式</h2><h3 id="2-1命令的基本状态"><a href="#2-1命令的基本状态" class="headerlink" title="2.1命令的基本状态"></a>2.1命令的基本状态</h3><blockquote>
+<p>LATEX 中命令以反斜线 \ 开头，为以下两种形式之一：<br>• 反斜线和后面的一串字母，如\LaTeX。它们以任意非字母符号（空格、数字、标点等）为界限。<br>• 反斜线和后面的单个非字母符号，如$。<br>可选参数以方括号[和]包裹；必选参数一般以花括号{和}包裹  </p>
+</blockquote>
+<h3 id="2-2环境与参数"><a href="#2-2环境与参数" class="headerlink" title="2.2环境与参数"></a>2.2环境与参数</h3><p>LATEX 中还包括环境，用以令一些效果在局部生效，或是生成特殊的文档元素。LATEX环境的用法为一对命令\begin 和\end：</p>
+<blockquote>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;⟨environment name⟩&#125;[⟨optional arguments⟩]&#123;⟨mandatory arguments⟩&#125;</span><br><span class="line">…</span><br><span class="line"><span class="keyword">\end</span>&#123;⟨environment name⟩&#125;</span><br></pre></td></tr></table></figure><p>其中⟨environment name⟩ 为环境名，\begin 和 \end 中填写的环境名应当一致。类似命令，{⟨mandatory arguments⟩} 和 [⟨optional arguments⟩] 为环境所需的必选和可选参数。LATEX 环境可能需要一个或多个必选&#x2F;可选参数，也可能完全不需要参数。部分环境允许嵌套使用。<br>有些命令（如\bfseries）会对其后所有内容产生作用。若要限制其作用范围，则需要使用分组。LATEX 使用一对花括号 { 和 } 作为分组，在分组中使用的命令被限制在分组内，不会影响到分组外的内容</p>
+</blockquote>
+<h3 id="2-3基本结构"><a href="#2-3基本结构" class="headerlink" title="2.3基本结构"></a>2.3基本结构</h3><blockquote>
+<p>LATEX 源代码以一个 \documentclass 命令作为开头，它指定了文档使用的文档类。document 环境当中的内容是文档正文。<br>在 \documentclass 和 \begin{document} 之间的位置称为导言区。在导言区中常会使用</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span> 命令调用宏包，还会进行文档的全局设置。</span><br><span class="line"><span class="keyword">\documentclass</span>&#123;...&#125; <span class="comment">% ... 为某文档类</span></span><br><span class="line"><span class="comment">% 导言区</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"> <span class="comment">% 正文内容</span></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br><span class="line"> <span class="comment">% 此后内容会被忽略</span></span><br></pre></td></tr></table></figure></blockquote>
+<h3 id="2-4组织结构"><a href="#2-4组织结构" class="headerlink" title="2.4组织结构"></a>2.4组织结构</h3><blockquote>
+<p>编写长篇文档时，例如当编写书籍、毕业论文时，单个源文件会使修改、校对变得十分困难。将源文件分割成若干个文件，例如将每章内容单独写在一个文件中，会大大简化修改和校对的工作。<br>LATEX 提供了命令 \include 用来在源代码里插入文件：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\include</span>&#123;⟨filename⟩&#125;</span><br></pre></td></tr></table></figure>
+<p>⟨filename⟩ 为文件名（不带 .tex 扩展名）10，如果和要编译的主文件不在一个目录中，则要加上相对或绝对路径，eg</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\include</span>&#123;chapters/file&#125; <span class="comment">% 相对路径</span></span><br><span class="line"><span class="keyword">\include</span>&#123;/home/Bob/file&#125; <span class="comment">% *nix（包含 Linux、macOS）绝对路径</span></span><br><span class="line"><span class="keyword">\include</span>&#123;D:/file&#125; <span class="comment">% Windows 绝对路径，用正斜线</span></span><br></pre></td></tr></table></figure><p>值得注意的是\include 在读入 ⟨filename⟩ 之前会另起一页。有的时候我们并不需要这样，而是用\input 命令，它纯粹是把文件里的内容插入：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\input</span>&#123;⟨filename⟩&#125;</span><br></pre></td></tr></table></figure>
+<p>LATEX 还提供了一个 \includeonly 命令来组织文件，用于导言区，指定只载入某些文件。<br>导言区使用了\includeonly 后，正文中不在其列表范围的\include 命令不会起效：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\includeonly</span>&#123;⟨filename1⟩,⟨filename2⟩,…&#125;</span><br></pre></td></tr></table></figure></blockquote>
+<h3 id="2-4调用宏包"><a href="#2-4调用宏包" class="headerlink" title="2.4调用宏包"></a>2.4调用宏包</h3><blockquote>
+<p>在使用LATEX 时，时常需要依赖一些扩展来增强或补充LATEX 的功能，比如排版复杂的表格、插入图片、增加颜色甚至超链接等等。这些扩展称为宏包。调用宏包的方法非常类似调用文档类的方法：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>[⟨options⟩]&#123;⟨package-name⟩&#125;</span><br></pre></td></tr></table></figure>
+<p>\usepackage 可以一次性调用多个宏包，在 ⟨package-name⟩ 中用逗号隔开。这种用法一般不要使用可选参数(因为此时会为所有调用的宏包指定参数)：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%一次性调用三个排版表格常用的宏包</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;tabularx, makecell, multirow&#125;</span><br></pre></td></tr></table></figure><p>宏包（包括前面所说的文档类）可能定义了许多命令和环境，或者修改了LATEX 已有的命令和环境。它们的用法说明记在相应宏包和文档类的帮助文档。在 Windows 命令提示符或者Linux 终端下输入命令可查阅相应文档：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">texdoc ⟨pkg-name</span><br></pre></td></tr></table></figure></blockquote>
+<h3 id="2-5编译小tag"><a href="#2-5编译小tag" class="headerlink" title="2.5编译小tag"></a>2.5编译小tag</h3><p>最后介绍一个实用的工具宏包syntonly。加载这个宏包后，在导言区使用 \syntaxonly 命令，可令LATEX 编译后不生成DVI或者PDF文档，只排查错误，编译速度会快不少：</p>
+<blockquote>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;syntonly&#125;</span><br><span class="line"><span class="keyword">\syntaxonly</span></span><br></pre></td></tr></table></figure><p>如果想生成文档，则用%注释掉\syntaxonly 命令即可。</p>
+</blockquote>
+<h2 id="3-规定编译的文档类型与使用的宏包"><a href="#3-规定编译的文档类型与使用的宏包" class="headerlink" title="3.规定编译的文档类型与使用的宏包"></a>3.规定编译的文档类型与使用的宏包</h2><h3 id="3-1文档类"><a href="#3-1文档类" class="headerlink" title="3.1文档类"></a>3.1文档类</h3><blockquote>
+<p>文档类规定了LATEX源代码所要生成的文档的性质——普通文章、书籍、演示文稿、个人简历等等。LATEX 源代码的开头须用\documentclass 指定文档类</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[⟨options⟩]&#123;⟨class-name⟩&#125;</span><br></pre></td></tr></table></figure>
+<p>常用的文档如下其中前三个习惯上称之为标准文档，这三个对于支持中文排版的派生文档为ctexart、ctexrep、ctexbook</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%article|文章格式的文档类，广泛用于科技论文、报告、说明文档等。</span></span><br><span class="line"><span class="comment">%report|长篇报告格式的文档类，具有章节结构，用于综述、长篇论文、简单的书籍等。</span></span><br><span class="line"><span class="comment">%book|书籍文档类，包含章节结构和前言、正文、后记等结构。</span></span><br><span class="line"><span class="comment">%proc|基于article 文档类的一个简单的学术文档模板。</span></span><br><span class="line"><span class="comment">%slides|幻灯格式的文档类，使用无衬线字体。</span></span><br><span class="line"><span class="comment">%minimal|一个极其精简的文档类，只设定了纸张大小和基本字号，用作代码测试的最小工作示例（Minimal Working Example）。</span></span><br></pre></td></tr></table></figure>
+<p>%[]中的内容为可选参数，在\documentclass中可选参数为全局规定一些排版的参数，如字号、纸张大小、单双面等等<br>对于LATEX 的三个标准文档类可指定的选项包括：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%10pt, 11pt, 12pt 指定文档的基本字号。默认为10pt。</span></span><br><span class="line"><span class="comment">%a4paper, letterpaper, … 指定纸张大小，默认为美式信纸letterpaper（8.5in×11in，大约相当于21.6cm×28.0cm）。可指定选项还包括a5paper，b5paper，executivepaper 和legalpaper。有关纸张大小的更多细节，请参考5.4.1小节。</span></span><br><span class="line"><span class="comment">%twoside, oneside 指定单面/双面排版。双面排版时，奇偶页的页眉页脚、页边距不同。article和report 默认为 oneside，book 默认为 twoside。</span></span><br><span class="line"><span class="comment">%onecolumn, twocolumn 指定单栏/双栏排版。默认为 onecolumn。</span></span><br><span class="line"><span class="comment">%openright, openany 指定新的一章 \chapter 是在奇数页（右侧）开始，还是直接紧跟着上一页开始。report 默认为 openany，book 默认为 openright。对 article 无效。</span></span><br><span class="line"><span class="comment">%landscape 指定横向排版。默认为纵向。</span></span><br><span class="line"><span class="comment">%titlepage, notitlepage 指定标题命令 \maketitle 是否生成单独的标题页。article 默认为notitlepage，report 和 book 默认为 titlepage。</span></span><br><span class="line"><span class="comment">%fleqn 令行间公式左对齐。默认为居中对齐。</span></span><br><span class="line"><span class="comment">%leqno 将公式编号放在左边。默认为右边。</span></span><br><span class="line"><span class="comment">%draft, final 指定草稿/终稿模式。草稿模式下，断行不良（溢出）的地方会在行尾添加一个黑色方块；插图、超链接等功能也会受这一组选项影响，具体见后文。默认为final。</span></span><br></pre></td></tr></table></figure></blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/origin404">originQ404</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://origin404.github.io/hexo/2025/06/22/latex/">https://origin404.github.io/hexo/2025/06/22/latex/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://origin404.github.io/hexo" target="_blank">origin404 blog</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&amp;pid=ImgDetMain" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/hexo/2025/05/13/%E7%BD%91%E7%BB%9C%E5%B1%82/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2"></div></div><div class="info-2"><div class="info-item-1">IPIP地址:给在网络中的每一台主句的每一个接口配备的标示符IP地址包括&lt;网络号&gt;&lt;主机号&gt;早期的分类IP地址A类地址：8位网络号,首一位为0,可指派2的7次方-2个网络(全0的本网络与全1的用于环回测试的本主机)        24位主机号,可指派2的24次方-2个主机端口(固定的:0的网络地址与全1的网络下所有主机)B类地址：16位网络号,首两位为10,可指派2的14次方个网络        16位主机号,可指派2的16次方-2(254)个主机端口(同上)C类地址：24位网络号,首三位为110,可指派2的21次方个网络       ...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://th.bing.com/th/id/OIP.3BuiIGQ7epYvM5zYem18TwHaGR?rs=1&amp;pid=ImgDetMain" onerror="this.onerror=null;this.src='/hexo/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">originQ404</div><div class="author-info-description">this is my bloger,this is good.i like it</div><div class="site-data"><a href="/hexo/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/hexo/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/hexo/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/origin404"><i class="fab fa-github"></i><span>Follow 洒家</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/origin404" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2682076246@qq.com" target="_blank" title="qqmail"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">we are the campions</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-LATEX%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">1.LATEX的基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%96%87%E6%A1%A3%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%9A%84%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">2.文档的代码结构与基本的组织方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E5%91%BD%E4%BB%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%8A%B6%E6%80%81"><span class="toc-number">2.1.</span> <span class="toc-text">2.1命令的基本状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8F%82%E6%95%B0"><span class="toc-number">2.2.</span> <span class="toc-text">2.2环境与参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.</span> <span class="toc-text">2.3基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84"><span class="toc-number">2.4.</span> <span class="toc-text">2.4组织结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E8%B0%83%E7%94%A8%E5%AE%8F%E5%8C%85"><span class="toc-number">2.5.</span> <span class="toc-text">2.4调用宏包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5%E7%BC%96%E8%AF%91%E5%B0%8Ftag"><span class="toc-number">2.6.</span> <span class="toc-text">2.5编译小tag</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%A7%84%E5%AE%9A%E7%BC%96%E8%AF%91%E7%9A%84%E6%96%87%E6%A1%A3%E7%B1%BB%E5%9E%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E7%9A%84%E5%AE%8F%E5%8C%85"><span class="toc-number">3.</span> <span class="toc-text">3.规定编译的文档类型与使用的宏包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E6%96%87%E6%A1%A3%E7%B1%BB"><span class="toc-number">3.1.</span> <span class="toc-text">3.1文档类</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/hexo/2025/06/22/latex/" title="无标题">无标题</a><time datetime="2025-06-22T11:43:27.740Z" title="发表于 2025-06-22 19:43:27">2025-06-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/hexo/2025/05/13/%E7%BD%91%E7%BB%9C%E5%B1%82/" title="无标题">无标题</a><time datetime="2025-05-13T13:56:42.917Z" title="发表于 2025-05-13 21:56:42">2025-05-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/hexo/2025/04/15/%E6%B8%97%E9%80%8F/" title="无标题">无标题</a><time datetime="2025-04-15T07:07:06.361Z" title="发表于 2025-04-15 15:07:06">2025-04-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/hexo/2025/04/10/%E7%97%9B%E8%8B%A6%E7%9A%84%E5%AE%9E%E4%B9%A0/" title="无标题">无标题</a><time datetime="2025-04-10T07:53:11.665Z" title="发表于 2025-04-10 15:53:11">2025-04-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/hexo/2025/03/21/%E6%97%A5%E5%B8%B8/" title="日常">日常</a><time datetime="2025-03-21T14:44:48.000Z" title="发表于 2025-03-21 22:44:48">2025-03-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By originQ404</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/hexo/js/utils.js"></script><script src="/hexo/js/main.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
